@@ -1,0 +1,33 @@
+--Primary keys can't be empty or duplicates
+
+CREATE TABLE customer(
+	customer_id SERIAL PRIMARY KEY,
+	first_name VARCHAR(100),
+	last_name VARCHAR(150),
+	billing_info VARCHAR(150),
+	reward_num INTEGER
+);
+
+CREATE TABLE concession(
+	item_id SERIAL PRIMARY KEY,
+	amount NUMERIC(5,2),
+	item_name VARCHAR(150)
+);
+
+CREATE TABLE movie(
+	movie_id SERIAL PRIMARY KEY,
+	title VARCHAR(150),
+	run_time INTEGER
+);
+
+CREATE TABLE ticket(
+	ticket_num SERIAL PRIMARY KEY,
+	movie_time TIME,
+	quantity INTEGER,
+	movie_id INTEGER,
+	FOREIGN KEY(movie_id) REFERENCES movie(movie_id)
+);
+
+
+
+

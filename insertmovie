@@ -1,0 +1,45 @@
+INSERT INTO customer(
+	customer_id,
+	first_name,
+	last_name,
+	billing_info,
+	reward_num
+)VALUES(
+	1,
+	'Daechwita',
+	'Bleu',
+	'100 Best Boi Ave Mommy loves me, TA',
+	1
+);
+
+INSERT INTO concession(
+	item_id,
+	amount,
+	item_name
+)VALUES(
+	1,
+	999.65,
+	'catnip'
+);
+
+INSERT INTO movie(
+	movie_id,
+	title,
+	run_time
+)VALUES(
+	1,
+	'I am the best fat boi in the whole world',
+	120
+);
+
+INSERT INTO ticket(
+	ticket_num,
+	movie_time,
+	quantity,
+	movie_id
+)VALUES(
+	1,
+	'6:30:00',
+	2,
+	1
+);
